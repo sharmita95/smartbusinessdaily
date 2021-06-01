@@ -1,0 +1,198 @@
+@charset 'utf-8';
+@import "compass/css3";
+@import 'compass/css3/filter';
+@import "compass/css3/user-interface";
+
+/*------------------------------------------------------------------
+Variables
+*/
+$transition: cubic-bezier(0.25,0.8,0.25,1);
+$break-small: 640px;
+$break-medium: 1024px;
+$break-large: 1440px;
+$break-xlarge: 1600px;
+
+$black: #090909;
+$border: #e9e9e9;
+$accent: #f75454;
+$color2: #f75454;
+$form-border: #dfdfdf;
+
+
+$social: (
+	facebook: #3b5998,
+	linkedin: #007bb6,
+	twitter: #00aced,
+	instagram: #3f729b,
+	youtube: #e52d27,
+	vkontakte: #45668e,
+	pinterest: #bd081c,
+	whatsapp: #25d366,
+	medium: #00ab6c,
+	email: #9b9b9b
+);
+
+/*------------------------------------------------------------------
+Foundation
+*/
+@import 'settings';
+@import 'foundation';
+@include foundation-global-styles;
+@include foundation-typography;
+@include foundation-flex-grid;
+@include foundation-responsive-embed;
+@include foundation-media-object;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-flex-classes;
+
+/*------------------------------------------------------------------
+Utilities
+*/
+@import "utilities.scss";
+
+/*------------------------------------------------------------------
+Structure
+*/
+@import "structure.scss";
+
+/*------------------------------------------------------------------
+Icons
+*/
+@import 'icons.scss';
+
+/*------------------------------------------------------------------
+Page Transitions
+*/
+@import "plugins/plugin-animsition.scss";
+
+/*------------------------------------------------------------------
+Header
+*/
+@import 'header.scss';
+@import 'header-menu.scss';
+
+/*------------------------------------------------------------------
+Mobile Menu
+*/
+@import "side-panel.scss";
+@import "mobilemenu.scss";
+
+/*------------------------------------------------------------------
+Posts
+*/
+@import 'posts.scss';
+
+/*------------------------------------------------------------------
+Plugin - MFP
+*/
+@import "plugins/plugin-mfp.scss";
+
+/*------------------------------------------------------------------
+Plugin - PS
+*/
+@import "plugins/plugin-ps.scss";
+
+/*------------------------------------------------------------------
+Articles
+*/
+@import 'post-detail.scss';
+@import 'post-detail-gallery.scss';
+
+/*------------------------------------------------------------------
+Comments
+*/
+@import 'comments.scss';
+
+/*------------------------------------------------------------------
+Forms
+*/
+@import "plugins/plugin-select2.scss";
+@import "forms.scss";
+@import "shortcodes/buttons.scss";
+
+/*------------------------------------------------------------------
+Archives
+*/
+@import "archive.scss";
+
+/*------------------------------------------------------------------
+Plugin - Flickity
+*/
+@import "plugins/plugin-flickity.scss";
+@import "shortcodes/freescroll.scss";
+
+/*------------------------------------------------------------------
+WP-Specific
+*/
+@import "wpspecific.scss";
+
+/*------------------------------------------------------------------
+Widgets
+*/
+@import 'widgets.scss';
+
+/*------------------------------------------------------------------
+Carousel
+*/
+@import "plugins/plugin-slick.scss";
+
+/*------------------------------------------------------------------
+Parallax
+*/
+@import "plugins/plugin-jarallax.scss";
+
+/*------------------------------------------------------------------
+Shortcodes
+*/
+@import "shortcodes/shortcodes.scss";
+@import "shortcodes/accordion.scss";
+@import "shortcodes/clients.scss";
+@import "shortcodes/horizontal_list.scss";
+@import "shortcodes/tabs.scss";
+@import "shortcodes/iconbox.scss";
+@import "shortcodes/teammembers.scss";
+@import "shortcodes/testimonials.scss";
+@import "shortcodes/flipbox.scss";
+@import "shortcodes/reactions.scss";
+@import "shortcodes/reviews.scss";
+@import 'shortcodes/newsletter.scss';
+@import 'shortcodes/sponsors.scss';
+@import "shortcodes/title.scss";
+@import "shortcodes/instagram.scss";
+@import "shortcodes/counter.scss";
+@import "shortcodes/social-post.scss";
+@import "shortcodes/social-list.scss";
+@import "shortcodes/post-shortcodes.scss";
+@import "shortcodes/categorylinks.scss";
+@import "shortcodes/cookiebar.scss";
+@import "shortcodes/pricing_table.scss";
+@import "shortcodes/thb_pinit.scss";
+@import "shortcodes/thb_hotspot.scss";
+
+/*------------------------------------------------------------------
+Pagination
+*/
+@import "pagination.scss";
+
+/*------------------------------------------------------------------
+Plugin - Plyr
+*/
+@import "plugins/plugin-plyr.scss";
+
+/*------------------------------------------------------------------
+WooCommerce
+*/
+@import "woocommerce/woocommerce-general.scss";
+@import "woocommerce/woocommerce-products.scss";
+@import "woocommerce/woocommerce-productpage.scss";
+@import "woocommerce/woocommerce-cart.scss";
+@import "woocommerce/woocommerce-checkout.scss";
+@import "woocommerce/woocommerce-myaccount.scss";
+@import "woocommerce/woocommerce-wishlist.scss";
+
+/*------------------------------------------------------------------
+Footer
+*/
+@import "footer.scss";
+
